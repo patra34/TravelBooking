@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDI-TRAVELS</title>
+    <link rel="icon" type="image/x-icon" href="SOURCES/IMG/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="SOURCES/CSS/styles.css">
+    <script>
+        function home() {
+            window.location.href = "login.jsp"; 
+            window.history.pushState(null, "", "login.jsp"); 
+            window.onpopstate = function(event) {
+                window.history.forward();
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img width="20%" height="20%" src="SOURCES/IMG/logo.png" alt="Background Image">
+            </div>
+            <h1 class="website-name">INDI-TRAVELS</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="SOURCES/IMG/bg-image.png" alt="Background Image">
+            <div class="centered-text">
+                <h2>WELCOME!</h2>
+                <p>Ready to explore!</p>
+                <button onclick="home()">EXPLORE</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-list">
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs1.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
